@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Book an Appointment</h1>
+    <form id="appointmentForm" action="submit_appointment.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br />
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required /><br />
+      <label for="car_color">Car Color:</label>
+      <input type="text" id="car_color" name="car_color" required /><br />
+      <label for="car_license_number">Car License Number:</label>
+      <input
+        type="text"
+        id="car_license_number"
+        name="car_license_number"
+        required
+      /><br />
+      <label for="car_engine_number">Car Engine Number:</label>
+      <input
+        type="text"
+        id="car_engine_number"
+        name="car_engine_number"
+        required
+      /><br />
+      <label for="appointment_date">Appointment Date:</label>
+      <input
+        type="date"
+        id="appointment_date"
+        name="appointment_date"
+        required
+      /><br />
+      <label for="mechanic">Select Mechanic:</label>
+      <select id="mechanic" name="mechanic">
+        <!-- Options will be populated dynamically using PHP --></select
+      ><br />
+      <input type="submit" value="Book Appointment" />
+    </form>
+    <script src="scripts.js"></script>
+  </body>
+</html>

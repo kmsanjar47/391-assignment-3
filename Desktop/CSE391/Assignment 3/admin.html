@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Admin Panel</h1>
+    <div>
+      <h2>Appointment List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Client Name</th>
+            <th>Phone</th>
+            <th>Car License Number</th>
+            <th>Appointment Date</th>
+            <th>Mechanic</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="appointmentList">
+          <!-- Appointments will be populated dynamically using PHP -->
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h2>Mechanics List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Max Clients Per Day</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="mechanicList">
+          <!-- Mechanics will be populated dynamically using PHP -->
+        </tbody>
+      </table>
+    </div>
+    <script src="admin_scripts.js"></script>
+  </body>
+</html>
